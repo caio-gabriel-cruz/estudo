@@ -26,6 +26,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
+            android:drawableStart="@drawable/baseline_attach_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,6 +44,7 @@
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 

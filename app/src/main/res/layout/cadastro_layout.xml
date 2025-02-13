@@ -24,6 +24,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:drawableStart="@drawable/baseline_account_box"
+            android:paddingStart="20dp"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,11 +33,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+
         android:hint="E-mail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_attach_email"
+            android:paddingStart="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -46,18 +51,19 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:drawableStart="@drawable/password"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        style="Widget.Material3.Button.FilledButton"
         android:id="@+id/elevatedButton"
+        style="Widget.Material3.Button.FilledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Cadastrar"
         android:layout_marginTop="20dp"
-        />
+        android:backgroundTint="@color/black"
+        android:text="Cadastrar" />
 
 
 </LinearLayout>
