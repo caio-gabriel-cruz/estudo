@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SobreNosActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="sobre"
+        android:textSize="60dp"
+        />
 
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="A Padaria Seu Zé é uma tradicional padaria localizada no Centro do Rio de Janeiro, na Rua Riachuelo nº 199. Oferece uma variedade de produtos, incluindo pães, bolos, doces, sucos, vitaminas, salgados, frango assado e tortas. Além disso, disponibiliza encomendas para coffee breaks e serviços de delivery.
+INSTAGRAM.COM
+
+A padaria é reconhecida por seu ambiente aconchegante e familiar, proporcionando uma experiência agradável aos clientes. No entanto, algumas avaliações indicam que os preços podem ser considerados elevados em comparação com outras padarias da região.
+TRIPADVISOR.COM.BR
+
+Para mais informações ou para realizar encomendas, é possível entrar em contato pelo telefone (21)"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
 
 
 </LinearLayout>
