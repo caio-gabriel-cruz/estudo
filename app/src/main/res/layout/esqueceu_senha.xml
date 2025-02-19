@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EsqueceuSenhaActivity"
     android:layout_margin="20dp"
-    >
+    android:orientation="vertical"
+    tools:context=".EsqueceuSenhaActivity">
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back"
+        />
 
     <ImageView
         android:layout_width="100dp"
@@ -22,26 +27,25 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="E-mail">
+        android:layout_marginTop="50dp"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:paddingStart="20dp"
-            android:drawableStart="@drawable/baseline_attach_email"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        style="Widget.Material3.Button.FilledButton"
         android:id="@+id/elevatedButton"
+        style="Widget.Material3.Button.FilledButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="@color/black"
-        android:text="Recuoerar Senha"
         android:layout_marginTop="20dp"
-        />
+        android:backgroundTint="@color/black"
+        android:text="Recuperar Senha" />
 
 
 </LinearLayout>

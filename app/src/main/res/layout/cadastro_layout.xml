@@ -10,6 +10,13 @@
     tools:context=".CadastroActivity">
 
     <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back"
+        />
+
+    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
@@ -19,27 +26,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="usuário">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:drawableStart="@drawable/baseline_account_box"
-            android:paddingStart="20dp"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-
-        android:hint="E-mail">
+        android:layout_marginTop="50dp"
+        android:hint="usuário"
+        app:startIconDrawable="@drawable/baseline_person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/baseline_attach_email"
             android:paddingStart="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,11 +40,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Senha">
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
