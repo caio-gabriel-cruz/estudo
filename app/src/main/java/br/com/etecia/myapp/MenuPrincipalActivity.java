@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MenuPrincipalActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView sobre;
+    CardView sobre, pao, donuts, queijo, estoque, financeiro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,20 @@ public class MenuPrincipalActivity extends AppCompatActivity implements View.OnC
         sobre = findViewById(R.id.sobrebtn);
         sobre.setOnClickListener(this);
 
+        pao = findViewById(R.id.paobtn);
+        pao.setOnClickListener(this);
+
+        donuts = findViewById(R.id.donutsbtn);
+        donuts.setOnClickListener(this);
+
+        queijo = findViewById(R.id.queijobtn);
+        queijo.setOnClickListener(this);
+
+        estoque = findViewById(R.id.estoquebtn);
+        estoque.setOnClickListener(this);
+
+        financeiro = findViewById(R.id.financeirobtn);
+        financeiro.setOnClickListener(this);
 
     }
 
